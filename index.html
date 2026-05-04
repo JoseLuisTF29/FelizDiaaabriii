@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Feliz Día del Trabajador</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- 🔥 CSS EXTRA PARA EL INPUT -->
+  <style>
+    .input-container {
+      position: relative;
+      width: 100%;
+    }
+
+    #answer {
+      width: 100%;
+      padding: 12px 45px 12px 12px;
+      border-radius: 12px;
+    }
+
+    #toggle-password {
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      color: #888;
+      font-size: 18px;
+      z-index: 10;
+    }
+
+    #toggle-password:hover {
+      color: #a64bf4;
+    }
+  </style>
+
+  <script src="https://kit.fontawesome.com/3f76d8025b.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<!-- ===== LOGIN KUROMI ===== -->
+<div id="login-screen">
+  <div class="login-container">
+
+    <!-- Zona izquierda Kuromi -->
+    <div class="kuromi-zone">
+      
+      <div class="speech" id="speech">💭 Tócame…</div>
+
+      <div class="kuromi-wrapper" id="kuromi">
+        <img id="kuromi-img" src="kuromi_main.png" class="kuromi-img">
+      </div>
+
+    </div>
+
+    <!-- Zona derecha formulario -->
+    <div class="login-form">
+
+      <h2>Bienvenidaaa 💜</h2>
+
+      <p class="question">¿Cuál es tu bebida favorita? 🥤</p>
+
+      <!-- 🔥 INPUT CON OJITO -->
+      <div class="input-container">
+        <input type="password" id="answer" placeholder="Escribe tu respuesta...">
+       <span id="toggle-password">👁</span>
+      </div>
+
+      <p id="error-msg"></p>
+
+      <button id="enter-btn">Abrir carta ✨</button>
+
+      <p class="kuromi-note">💜 Rapido Kuromi Girl 💜</p>
+
+    </div>
+
+  </div>
+</div>
+
+<!-- ===== TU ANIMACIÓN ORIGINAL ===== -->
+<div class="valentines-day">
+  <div class="envelope">
+    <div class="heart"></div>
+    <div class="front"></div>
+  </div>
+</div>
+
+<div id="card">
+  <div class="side one">
+    <div class="heart-beat"></div>
+  </div>
+
+  <div class="side two">
+    <h2>Feliz día de la chambeadora 💼✨</h2>
+
+<p>
+Hoy no es cualquier día… es un recordatorio de todo lo que haces y de lo fuerte que eres.
+Porque trabajar no es solo cumplir, es levantarte incluso cuando no tienes ganas, seguir aunque estés cansada y dar lo mejor de ti sin que muchos vean todo el esfuerzo que hay detrás.
+</p>
+
+<p>
+Aunque llegues tarde de vez en cuando jiji… Se notan esas ganas que tienes de salir adelante, de no rendirte, y de seguir avanzando.
+Y de verdad espero que eso nunca cambie.
+</p>
+
+<p>
+Puede que a veces no te des el crédito que mereces, pero créeme… estás haciendo mucho más de lo que piensas.
+</p>
+
+<img id="red-image" src="DIA-TRBAJO-BRI.jpeg" alt="Imagen" class="image-in-text"/>
+
+<p>
+Perdón por la tardanza…
+</p>
+
+<p id="blue-text">Con cariño, tu buen amigo y vecino SpidyMishi 🕸️💜</p>
+  </div>
+</div>
+
+<div class="made-with-love">
+  Hecho con <i>♥</i> para ti
+</div>
+
+<script src="script.js"></script>
+
+<!-- 🔊 SONIDOS -->
+<audio id="success-sound" src="success.mp3"></audio>
+<audio id="error-sound" src="error.mp3"></audio>
+
+<div id="particles"></div>
+<div class="music-player">
+  <audio controls loop>
+    <source src="quesera.mp3" type="audio/mpeg">
+  </audio>
+</div>
+</body>
+</html>
